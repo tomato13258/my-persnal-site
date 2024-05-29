@@ -4,8 +4,14 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header>
-    <div class="w-100 h-[500px] bg-slate-500"></div>
+  <header class="w-100 flex justify-center">
+    <div class="w-[80%] py-[20px]  flex justify-center">
+      <div class="w-[60%] header-img">
+        <img class="w-[30%] stamp-img" src="./components/pictures/240323 Welcome-02.png" alt="">
+        <img src="./components/pictures/230706aa.jpg" alt="我的作品">
+      </div>
+    </div>
+
   </header>
   <nav class="py-[10px] w-100 flex justify-center">
     <div class="w-[80%] border-y-[3px] border-black">
@@ -32,10 +38,25 @@ import { RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+.header-img {
+  position: relative;
+  pointer-events: none;
+}
+
+.stamp-img {
+  position: absolute;
+  right: -20px;
+  bottom: 60px;
+  transform: rotate(15deg);
+}
+
 .nav-btn {
   position: relative;
   overflow: hidden;
   padding: 0 0 5px 0;
+}
+.nav-btn:hover {
+ color: #9d5353;
 }
 
 .nav-btn::after {
@@ -50,12 +71,14 @@ import { RouterView } from 'vue-router'
   background-color: currentColor;
   transform: scaleX(0);
   transform-origin: center;
+  /* 這裡可以變成從中間產生動畫 */
   transition: transform 0.2s ease-out;
 }
 
 .nav-btn:hover::after {
   transform: scaleX(1);
 }
+
 /* header {
   line-height: 1.5;
   max-height: 100vh;
