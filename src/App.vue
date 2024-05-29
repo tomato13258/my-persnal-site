@@ -7,20 +7,22 @@ import { RouterView } from 'vue-router'
   <header>
     <div class="w-100 h-[500px] bg-slate-500"></div>
   </header>
-  <nav>
-    <div class="w-100 py-[15px] flex justify-center text-[20px] gap-[30px] tracking-widest bg-amber-300">
-      <button class="nav-btn">
-        <span class="mb-[5px]">ABOUT</span>
-      </button>
-      <button>
-        <span>WORK</span>
-      </button>
-      <button>
-        <span>ARTICAL</span>
-      </button>
-      <button>
-        <span>CONTACT</span>
-      </button>
+  <nav class="py-[10px] w-100 flex justify-center">
+    <div class="w-[80%] border-y-[3px] border-black">
+      <div class="py-[15px] flex justify-center text-[20px] gap-[30px] tracking-widest">
+        <button class="nav-btn">
+          <span class="mb-[5px]">ABOUT</span>
+        </button>
+        <button class="nav-btn">
+          <span>WORK</span>
+        </button>
+        <button class="nav-btn">
+          <span>ARTICAL</span>
+        </button>
+        <button class="nav-btn">
+          <span>CONTACT</span>
+        </button>
+      </div>
     </div>
   </nav>
   <RouterView />
@@ -30,9 +32,29 @@ import { RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-.nav-btn{
-  background-color: aliceblue;
-  text-decoration: underline;
+.nav-btn {
+  position: relative;
+  overflow: hidden;
+  padding: 0 0 5px 0;
+}
+
+.nav-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  border-radius: 20px;
+  color: #9d5353;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease-out;
+}
+
+.nav-btn:hover::after {
+  transform: scaleX(1);
 }
 /* header {
   line-height: 1.5;

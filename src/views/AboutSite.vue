@@ -2,7 +2,7 @@
 </script>
 
 <template> 
-<main>
+<main class="bg-red-400">
   <div class="">123</div>
 </main>
 </template>
