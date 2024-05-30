@@ -33,7 +33,9 @@ import { RouterView } from 'vue-router'
   </nav>
   <RouterView />
   <footer>
-    <div class="w-100 h-[100px] bg-cyan-300"></div>
+    <div class="w-100 h-[100px] bg-cyan-300">
+      Illustration by <a href="https://icons8.com/illustrations/author/RogqKjMRAQ79">xopolin</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
+    </div>
   </footer>
 </template>
 
