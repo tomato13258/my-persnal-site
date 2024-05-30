@@ -7,13 +7,13 @@
       <div class="main-box flex justify-center gap-[100px]">
         <div class="h1-bg flex flex-col items-end">
           <div class="flex items-center ">
-            <font-awesome-icon class="text-[60px] mr-[40px]" icon="fa-solid fa-address-card" />
+            <!-- <font-awesome-icon class="text-[60px] mr-[40px]" icon="fa-solid fa-address-card" /> -->
             <div class="">
               <h1 class="text-[50px] font-bold">關於我</h1>
               <h2 class="text-[30px] ">ABOUT ME</h2>
             </div>
           </div>
-          <img class="w-[80%]" src="../components/pictures/shine-young-woman-painting-on-canvas-1.png" alt="">
+          <img class="w-[100%]" src="../components/pictures/dizzy-designer-drawing-on-graphics-tablet.gif" alt="">
         </div>
 
         <div class="w-[30%] flex flex-col items-center pt-[50px] p-box">
@@ -21,7 +21,6 @@
           <p class="text-[20px]">在職期間利用下班時間學習平面設計和UXUI相關知識，熱衷於不斷學習和成長。
             受工作影響，對資訊領域產生濃厚興趣，決心轉行成為一名前端工程師並報名工程師培訓班。
             期待在新領域中挑戰自我，展現潛力與能力。(還沒改內容...)</p>
-          <font-awesome-icon class="text-[80px] text-[#9d5353] round-icon" icon="fa-solid fa-certificate" />
         </div>
 
       </div>
@@ -36,7 +35,7 @@
               <h2 class="text-[30px] ">ABOUT ME</h2>
             </div>
           </div>
-          <img class="w-[80%]" src="../components/pictures/shine-young-woman-painting-on-canvas-1.png" alt="">
+          <img class="w-[50%]" src="../components/pictures/cubes-man-doing-a-lot-of-things-at-the-same-time.gif" alt="">
         </div>
 
         <div class="w-[30%] flex flex-col items-center pt-[50px] p-box">
