@@ -13,7 +13,7 @@ import { RouterView } from 'vue-router'
     </div>
 
   </header>
-  <nav class="py-[10px] w-100 flex justify-center">
+  <nav class="py-[10px] w-100 flex justify-center mb-[100px]">
     <div class="w-[80%] border-y-[3px] border-black">
       <div class="py-[15px] flex justify-center text-[20px] gap-[30px] tracking-widest">
         <button class="nav-btn">
